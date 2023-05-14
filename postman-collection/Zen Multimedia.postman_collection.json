@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "7360c8f3-bc50-4538-a959-2bb8984a4815",
+		"name": "Zen Multimedia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26305115"
+	},
+	"item": [
+		{
+			"name": "zen-apis",
+			"item": [
+				{
+					"name": "Product List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_name",
+									"value": "Bunga",
+									"type": "text"
+								},
+								{
+									"key": "variants",
+									"value": "Image",
+									"type": "text"
+								},
+								{
+									"key": "product_categories",
+									"value": "Image",
+									"type": "text"
+								},
+								{
+									"key": "product_images",
+									"value": "bunga.jpg",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "127.0.0.1:8000/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_name",
+									"value": "Apa",
+									"type": "text"
+								},
+								{
+									"key": "variants",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "product_categories",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "product_images",
+									"value": "1.png",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "budiman",
+									"type": "text"
+								},
+								{
+									"key": "deskripsi",
+									"value": "orangnya galak",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/products/postmandummy",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"products",
+								"postmandummy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
